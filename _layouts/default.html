@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="Liinko">
+    <meta name="keyword" content="FFXIV, FFXIV Textures, FFXIV Dat, FFXIV Mods">
+
+    <title>{{site.apptitle}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{site.baseurl}}/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="{{site.baseurl}}/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/lineicons/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/style-responsive.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>{{site.title}}</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      {% include sidebar.html %}
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">                    
+              <div class="row">
+                  {{content}}
+
+
+      <!--main content end-->
+                  
+      <!-- **********************************************************************************************************************************************************
+      RIGHT SIDEBAR CONTENT
+      *********************************************************************************************************************************************************** -->                  
+                  
+                {% if page.url == '/' %} {% include sideupdates.html %} {% endif %}
+                  
+              </div><! --/row -->
+          </section>
+      </section>
+
+      <!--main content end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="{{site.baseurl}}/js/jquery.js"></script>
+    <script src="{{site.baseurl}}/js/jquery-1.8.3.min.js"></script>
+    <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="{{site.baseurl}}/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="{{site.baseurl}}/js/jquery.scrollTo.min.js"></script>
+    <script src="{{site.baseurl}}/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="{{site.baseurl}}/js/jquery.sparkline.js"></script>
+    <script src="{{site.baseurl}}/js/common-scripts.js"></script>
+  </body>
+</html>

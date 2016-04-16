@@ -1,0 +1,78 @@
+---
+layout: default
+title: Color Tutorial
+---
+
+<div class="col-lg-10 main-chart">
+  <div class="showback">
+      <p><b><h1>Color</h1></b>
+      In the applications Texture Map drop down we select and save ColorSet1 as a DDS.<br/>
+
+      <div class="alert alert-warning"><b>Note:</b> This will be a very small 4 x 16 texture, zooming in to 3200% in Photoshop will make it clearly visible</div>
+
+      Since the image is so small modifying the colors will require the use of the pencil tool at 1px size.<br/>
+      <br/>
+      Here are the different sections that make up the color texture.<br/>
+
+      <img src="http://i.imgur.com/7PbEVfV.png" border="0" alt=""/><br/>
+      <br/>
+      Here I've modified the color section of the Hempen Tabard<br/>
+
+      <img src="http://i.imgur.com/Znx98Jr.png" border="0" alt=""/><br/>
+      <br/>
+      Make sure to save the texture with the correct settings (16.16.16.16f ABGR 64bp) in Photoshop and then import<br/>
+
+      Here are the results of the above modification<br/>
+
+      <img src="http://i.imgur.com/2PjVReF.png" border="0" alt=""/><br/>
+      <br/>
+      Here I modified the metallic secton<br/>
+
+      <img src="http://i.imgur.com/Q77FX6O.png" border="0" alt=""/> <img src="http://i.imgur.com/ZAR6C47.png" border="0" alt=""/><br/>
+      <br/>
+      Here I modified the Color and the Glow section of the texture for Bridesmaid's Tights<br/>
+
+      <img src="http://i.imgur.com/ENmDy2f.png" border="0" alt=""/> <img src="http://i.imgur.com/dGPkbfe.png" border="0" alt=""/><br/>
+      <br/>
+      <h1><b>Adding more colors to a texture</b></h1>
+
+      The Alpha Channel in the Normal Map determines where the colors are placed in the texture<br/>
+
+      <img src="http://i.imgur.com/n77hxX1.png" border="0" alt=""/><br/>
+      <br/>
+      <b>How it works:</b><br/>
+      The colors in the Alpha Channel of the Normal Map range from white to black and are divided into 16 sections, one for each of the 16 pixels of the color texture, black being the very top, and white at the bottom.<br/>
+      <br/>
+      I will be using Bridesmaids Tights as an example.<br/>
+
+      <img src="http://i.imgur.com/uvPgsvy.png" border="0" alt=""/><br/>
+
+      <div class="alert alert-warning"><b>Note:</b> The extra row to the left is not part of the color texture and is put there as a reference.</div>
+
+      Each of these shades of gray is associated with the colors in the row they are in.<br/>
+
+      So as an example, I chose to use the shade of gray I highlighted, so I've modified the colors directly to the right of it.<br/>
+
+      <img src="http://i.imgur.com/DNFN3j5.png" border="0" alt=""/><br/>
+
+      I then colored in blue for color, black for metallic, and blue again for glow.<br/>
+      <br/>
+      The next step is to get that gray color associated with that section(highlighted in red), go over to the alpha channel in the Normal Map and color the part of the texture we want to use that new color in.<br/>
+      <br/>
+      So here I've colored in a line in the leg part of the texture with the color associated with the row in the color texture.<br/>
+
+      <img src="http://i.imgur.com/bpLj6TG.png" border="0" alt=""/> <img src="http://i.imgur.com/D6zfHWm.png" border="0" alt=""/><br/>
+      <div class="alert alert-warning"><b>Note:</b> It can sometimes be difficult to determine which part is which, while at times it is very obvious. Experiment with different parts if you are unsure.</div>
+
+      Save and Import the texture, making sure the settings for saving are correct.<br/>
+      <br/>
+      Here is the in-game result:<br/>
+
+      <img src="http://i.imgur.com/dGPkbfe.png" border="0" alt=""/><br/>
+
+      This can be replicated with any piece of equipment, you have 16 segments that can all be different colors, metallic shine, and glow, which can then be painted onto any part of the texture. This makes it coloring of any texture highly customizable.<br/>
+      <br/>
+       <div class="alert alert-danger"><b>Note:</b>Currently, modifying the color texture breaks the dyeing system in-game. So although you can see the modified texture, if you try to dye your equipment you will notice the color does not change, it remains your modified color. I do not know exactly why this is but will look into it.</div>
+      </p>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+---
+---
+
+<aside>
+  <div id="sidebar"  class="nav-collapse ">
+      <!-- sidebar menu start-->
+      <ul class="sidebar-menu" id="nav-accordion">
+
+          <p class="centered"><img src="/img/logo.png" class="img-circle" width="70"></p>
+          <h5 class="centered">{{site.apptitle}}</h5>
+
+          <li class="mt">
+              <a {% if page.url == '/' %}class="active"{% endif %} href="index.html">
+                  <i class="fa fa-list-alt"></i>
+                  <span>Application</span>
+              </a>
+          </li>
+
+          <li class="sub-menu">
+              <a {% if page.url == '/change_log.html' or page.url == '/progress.html'%}class="active"{% endif %} href="javascript:;" >
+                  <i class="fa fa-list"></i>
+                  <span>App Details</span>
+              </a>
+              <ul class="sub">
+                  <li {% if page.url == '/change_log.html' %}class="active"{% endif %}><a  href="change_log.html">Change Log</a></li>
+                  <li {% if page.url == '/progress.html' %}class="active"{% endif %}><a href="progress.html">Progress</a></li>
+              </ul>
+          </li>
+
+          <li class="sub-menu">
+              <a {% if page.url == '/gen_tutorial.html' or page.url == '/saving_tutorial.html' or page.url == '/transparency_tutorial.html' or page.url == '/color_tutorial.html' or page.url == '/facepaint_tutorial.html' %}class="active"{% endif %}href="javascript:;" >
+                  <i class="fa fa-book"></i>
+                  <span>Tutorials</span>
+              </a>
+              <ul class="sub">
+                  <li {% if page.url == '/gen_tutorial.html' %}class="active"{% endif %}><a  href="gen_tutorial.html">General</a></li>
+                  <li {% if page.url == '/saving_tutorial.html' %}class="active"{% endif %}><a  href="saving_tutorial.html">Saving</a></li>
+                  <li {% if page.url == '/transparency_tutorial.html' %}class="active"{% endif %}><a  href="transparency_tutorial.html">Transparency</a></li>
+                  <li {% if page.url == '/color_tutorial.html' %}class="active"{% endif %}><a  href="color_tutorial.html">Color</a></li>
+                  <li {% if page.url == '/facepaint_tutorial.html' %}class="active"{% endif %}><a  href="facepaint_tutorial.html">Combining Face Paints</a></li>
+              </ul>
+          </li>
+          <li class="sub-menu">
+              <a {% if page.url == '/bug_report.html' %}class="active"{% endif %} href="bug_report.html">
+                  <i class="fa fa-bug"></i>
+                  <span>Bug Report/Feedback</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=Z9LCGGDLJ6SUC&amp;lc=US&amp;item_name=FFXIV%20Browser%20Donation&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted" target="_blank" >
+                  <i class=" fa fa-coffee"></i>
+                  <span>Donate</span>
+              </a>
+          </li>
+
+      </ul>
+      <!-- sidebar menu end-->
+  </div>
+</aside>
+
