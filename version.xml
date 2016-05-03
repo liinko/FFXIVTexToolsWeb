@@ -2,4 +2,13 @@
 <FFXIVTexTools>  
   <version>1.3.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
+  <log>
+    Application:\n
+    Added Version Check to application\n\n
+    Textures Added:\n
+    Mounts\n
+    Minions\n\n
+    Bug Fixes:\n
+    Fixed a bug where certain textures were not being saved correctly\n
+  </log>
 </FFXIVTexTools>  
