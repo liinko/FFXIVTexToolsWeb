@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools>  
-  <version>1.3.0.0</version>  
+  <version>1.4.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>
     
     Application:
-      Added Version Check to application
-    
-    Textures Added:
-      Mounts
-      Minions
+      Support for patch 3.3
+      Added Save 3D button, which exports meshes as .obj files
     
     Bug Fixes:
-      Fixed a bug where certain textures were not being saved correctly
+      Fixed some issues with loading different languages
+      Minor tweaks
+      
   </log>
 </FFXIVTexTools>  
