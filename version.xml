@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>  
-<FFXIVTexTools>  
-  <version>1.4.5.0</version>  
+<FFXIVTexTools2>  
+  <version>0.9.1.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>
-    
     Application:
-      Added full path to texture info
-      Changed .index2 fix from delete to rename
     
     Bug Fixes:
-      Fixed an issue where application was not updating the amount of files in the index as new gear and items were added to the game, causing crashes when loading certain textures and importing.
       
   </log>
-</FFXIVTexTools>  
+</FFXIVTexTools2>  
