@@ -1,0 +1,135 @@
+---
+layout: default
+title: Application Tutorial
+---
+
+<div class="col-lg-10 main-chart">
+  <div class="showback">
+      <p>
+      <h1><b>The Application</b></h1>
+         When opening the application for the first time you will be asked to locate your FFXIV data folder.
+      <br/>
+         This is where the game installs by default:            
+         <div class="alert alert-info"><b>C:\Program Files (x86)\SquareEnix\FINAL FANTASY XIV - A Realm Reborn\game\sqpack\ffxiv</b></div>
+
+         <img src="http://i.imgur.com/xnWzOZil.png" alt="Browse"><br/>
+          <br/>
+      <h2><b>Explorer</b></h2>
+        After selecting the appropriate folder the list of textures will populate.<br/>
+        You will find that the list is sorted into categories including: equipment slots, character, mounts, minions, etc.<br/>
+        The items within these categories are sorted alphabetically to make it easier to find certain textures. <br/>
+
+      <img src="http://i.imgur.com/0kU4ljPl.png" alt="Explorer">
+
+
+      <h2><b>Search</b></h2>
+      You may also use the search function for quick access to specific textures.<br/>
+
+      <img src="http://i.imgur.com/6LfwMvv.png" alt="Find Used"><br/> <br/>
+
+    <div class="alert alert-warning"><b>Note:</b> It will only begin to filter when 3 or more characters have been typed in</div><br/>
+
+
+      <h2><b>After Selecting an Item</b></h2>
+      When a texture is selected and loaded, the default Race, Texture Map, Part, and sometimes Type will be selected.<br/>
+
+      If there is only 1 available item to select, the drop down will be disabled. This makes it easier to determine if there are multiple Races, Texture Maps, or Parts for that item.<br/>
+
+      <img src="http://i.imgur.com/KRiXKrHl.png" alt="DropDown"><br/>
+      <br/>
+      <b>Race</b><br/>
+      <li>The application will determine if the item has multiple textures associated with specific races and add those races to the drop down</li>
+      <li>It is important to note, that most textures are shared among all races, in which case the default race will be selected and the drop down menu will be disabled.</li>
+      <li>Midlander Male is the common default race for Male Only and Regular equipment textures</li>
+      <li>Midlander Female is the common default race for Female Only equipment textures</li>
+      <br/>
+      <b>Texture Map</b><br/>
+      There are 4 types of available textures and a ColorSet that can appear in the Texture Map drop down.<br/>
+      <br/>
+      <li>Diffuse - A type of color map, in FFXIV a stain or dye can sometimes go over or get mixed with this texture</li>
+      <li>Normal - Gives the illusion of height based on light reflections, its blue channel contains the textures alpha, and the alpha channel contains a gray-scale index for colors.</li>
+      <li>Specular - Affects the reflectiveness or how shiny a texture is</li>
+      <li>Mask - A channel packed texture | More info here:  <a href="http://blog.digitaltutors.com/understanding-difference-texture-maps/" target="_blank">http://blog.digitaltutors.com/understanding-difference-texture-maps/</a></li>
+      <li>ColorSet - A 4x16 texture that determines the colors of a model, the location of the color in the model is determined by the alpha channel of the Normal Map</li>
+      <br/>
+
+      <b>Part/Num</b><br/>
+      <li>This dropdown shows the part or number for some models have different parts to them, such as Head+Body category, crafting tools, and more.</li>
+
+      <b>Type</b><br/>
+      <li>In addition to some textures having parts, some also have certain types, these include some mounts, hair, and face textures</li>
+
+      <h2><b>Saving, Importing, and Reverting</b></h2>
+      The options available for each texture:<br/>
+
+      <img src="http://i.imgur.com/eTVxXLhl.png" alt="Control Buttons"><br/>
+      <br/>
+
+      <li>Export PNG - Saves the texture as a regular .png file, used if you want to upload to a site and show the texture</li>
+      <li>Export DDS - Saves the texture as a DirectDraw Surface, this is the file we modify in Photoshop.</li>
+      <li>Import - Once a texture has been modified, clicking import will write it into the new .dat4 file and update the index file to point to it</li>
+      <li>Enable/Disable - The text in this button will change depending on whether the texture is currently modified or not.</li>
+      <br/>
+
+      Once you've selected a texture you would like to modify you may can click on save DDS to save the texture file.<br/>
+      <br/>
+      The saved DDS file will be located within the FFXIV TexTools folder in this format:<br/>
+      <div class="alert alert-info">Example: FFXIV TexTools/Saved/Body/Hempen Tabard/v15_c0101e0011_top_n.dds</div>
+      <div class="alert alert-warning"><b>Note:</b> Save PNG will save to the same location.</div><br/>
+
+      <h2><b>The Texture Tab</b></h2>
+      This will show you relevant information about the texture being viewed.<br/>
+
+      <img src="http://i.imgur.com/1tHKEl8l.png" alt="Info Box"><br/>
+
+          <li>On the top left we have the texture type</li>
+          <li>Bottom left is the texture's dimensions</li>
+          <li>Top right is the checkboxes for switching color channels, this makes it easier to look at the modifications, without having to open the texture in photoshop</li>
+          <li>Bottom right is a tool for zooming and panning</li>
+
+          <div class="alert alert-warning"><b>Note:</b> The most important thing to note is the Texture Type, this will tell you in what format you must save the texture from Photoshop.</div><br/>
+
+    <h2><b>The 3D Model Tab</b></h2>
+          <img src="http://i.imgur.com/R88PG8ol.png" alt="Info Box"><br/>
+
+          Drop downs left to right
+          <li>Race: The different races that have a 3D model available</li>
+          <li>Mesh: The different meshes available for the model</li>
+          <li>Part/Type: The different parts of the item *not yet implemented*</li>
+
+          Buttons
+          <li>Export OBJ + Materials: exports the currently displayed model as an OBJ file with a custom made Diffuse file and the Normal with alpha removed</li>
+          <li>Import & Revert: *Not yet Implemented*</li>
+
+          Controls:
+          <li>Zoom: Mouse Wheel</li>
+          <li>Pan: Left Mouse Button</li>
+          <li>Rotate: Right Mouse Button</li>
+          <li>Back View: B</li>
+          <li>Front View: F</li>
+          <li>Top View: U</li>
+          <li>Bottom View: D</li>
+          <li>Left View: L</li>
+          <li>Right View: R</li>
+
+      <h2><b>Menus</b></h2>
+
+          Mods
+          <li>Mod List - Displays the contents of the modlist</li>
+      <img src="http://i.imgur.com/zet84PMl.png" alt="settings"><br/>
+          <li>Importer - Import mods created by others *Not yet implemented*</li>
+          <li>Disable All Mods - Modify index file to point to the original textures for anything that has been modified. Recommend using before any major patch</li>
+          <li>ReEnable All Mods - Modify the index file to point to all the modified textures again.</li>
+
+          Options
+          <li>Directories - Modify your ffxiv and save location</li>
+          <li>ModList - Toggle the use of a .modlist file off or on</li>
+          <li>DX Version - Change DX Version</li>
+
+          Help
+          <li>Check for problems - Checks for known problems that can be easily solved</li>
+          <li>Report Bug - Directs you to website for reporting a bug with the application</li>
+      <br/>       
+      </p>
+    </div>
+</div>
