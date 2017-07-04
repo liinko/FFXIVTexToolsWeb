@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FFXIVTexTools2>  
+  <version>0.9.5.0</version>  
+  <url>http://ffxivtextools.dualwield.net</url>  
+  <log>
+    Application:
+      Added a transparency checkbox for 3D models
+      Added a change reflections checkbox for 3D models
+      Disabled virtualization in treeview as it was causing issues with old items being selected while scrolling
+      
+    3D:
+      Updated 3D viewer to custom shaders for more accurate results
+      All items that have a 3D model should now be viewable
+      Added support for reading and viewing more than 2 meshes
+    
+    Textures:
+      Changed the pixelformat of saved files to bmp to support separate alpha channel
+      
+    Bug Fixes:
+      Fixed an issue where not all mounts were being displayed
+      Fixed an issue where extracted OBJ files had incorrect texture coordinates
+      Fixed an issue where some objects were not being disposed of properly causing increasing memory consumption
+      Other minor bug fixes
+      
+  </log>
+</FFXIVTexTools2>  
