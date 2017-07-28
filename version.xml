@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>0.9.6.0</version>  
+  <version>1.0.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>
-    Bug Fixes:
-        - Fixed an issue where some items 3D model would cause a crash due to different texture sizes
-        - Fixed an issue where some items textures were race specific and would cause a crash when viewing the 3D model
-        - Fixed an issue where most SB items would cause the game to crash when changing colorsets 
+Significant changes to the code, see github for more details.
+    
+Application:
+ - Application is no longer in beta.
+ - Changed lighting and reflection checkboxes to buttons which now cycle through values
+ - Texture or Model tab now stay selected when switching between items
+ - Selected texture map stays selected when switching between races/parts/types
+ - Color channel checkboxes stay selected when switching between texture maps
+ - Added index backup option, backs up to new folder "Index_Backups"
+ - Now checks if the game has updated in order to apply fixes and do backups
+    
+3D:
+ - Added mounts under the demihuman category (chocobos, magitek armor, etc.)
+ - More tweaks to the shader
+ 
+Textures:
+ - Added VFX textures for items that have effects
+ 
+Bug Fixes:
+ - Minor bugfixes
   </log>
 </FFXIVTexTools2>  
