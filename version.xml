@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.0.0.0</version>  
+  <version>1.1.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>
-Significant changes to the code, see github for more details.
+Updated HelixToolkit and SharpDX versions 
     
 Application:
- - Application is no longer in beta.
- - Changed lighting and reflection checkboxes to buttons which now cycle through values
- - Texture or Model tab now stay selected when switching between items
- - Selected texture map stays selected when switching between races/parts/types
- - Color channel checkboxes stay selected when switching between texture maps
- - Added index backup option, backs up to new folder "Index_Backups"
- - Now checks if the game has updated in order to apply fixes and do backups
-    
+ - Now works with 4.1 Patch.
+ - Added Search > Model ID option in menu.
+ - (Experimenta/Beta)Importing Models is now possible.
+ - Should now be more memory efficient.
+        
 3D:
- - Added mounts under the demihuman category (chocobos, magitek armor, etc.)
- - More tweaks to the shader
- 
-Textures:
- - Added VFX textures for items that have effects
+ - Export Model + Materials now exports a Collada .dae file as well as .obj files.
+ - Exported .dae files are skinned (include skeleton & blend weights)
+ - Note: Not all models are exportable as .dae yet.
+ - Changed culling mode.
+ - A few tweaks to the shader.
  
 Bug Fixes:
- - Minor bugfixes
+ - Fixed a bug that would prevent using 'Disable All Mods' and 'ReEnable All Mods'.
+ - Fixed colorset crashing under certain circumstances.
+ - Fixed an issue where updated image would not stay after importing or enabling/disabling colorsets.
+ - Fixed an issue where certain Hyur Highlander textures/models would not appear.
+ - Other minor bug fixes.
   </log>
 </FFXIVTexTools2>  
