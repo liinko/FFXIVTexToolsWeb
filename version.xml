@@ -13,7 +13,7 @@ Application:
         
 3D:
  - Export Model + Materials now exports a Collada .dae file as well as .obj files.
- - Exported .dae files are skinned (include skeleton & blend weights)
+ - Exported .dae files are skinned (include skeleton + blend weights)
  - Note: Not all models are exportable as .dae yet.
  - Changed culling mode.
  - A few tweaks to the shader.
