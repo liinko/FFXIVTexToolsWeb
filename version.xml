@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.2.0.0</version>  
+  <version>1.3.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>  
 Application:
- - Added DemiHuman category to Model Search.
- - Folder select dialog now reappears if incorrect folder is selected.
+ - Reorganized list into more categories
+ - Added Options > Save All DDS to menus
+ - Added Help > Start Over to menus
+ - Added dat file identifier to modlist data
+ - Added Backup for 060000 indices
+ - Changed location of modlist file
+ - Now attempts to locate ffxiv install directory
  
 Textures:
- - Added _stigma.tex to Equipment Decals
+ - Added some UI textures (more coming soon)
+ - Added Icon set to texture map list for gear
+ - Added support to import/export texture types A8, A1R5G5B5, A4R4G4B4
+ - Textures saved as an image no longer have a pre-multiplied alpha
 
 3D:
- - Meshes exported in .dae file are now separated into parts to reflect MDL structure.
- - Improved importing, it should work with most equipment.
- - Alpha texture for 3D files now exports separately.
+ -  Import now corrects bone name order discrepancies
+     ^  This allows replacing mesh parts from different pieces of gear
+ - Import now uses the binormals in the .dae file if they are present 
+ - Switched UV coordinates to (0,1) for OBJ files
  
 Bug Fixes:
- - Fixed an issue where certain model IDs would not appear in search results list.
- - Fixed an issue where other windows would stay open when main window was closed.
- - Fixed an issue where certain items with VFX files would crash due to being read incorrectly.
- - Fixed an issue where certain models for MCH weapons would not be displayed.
- - Fixed an issue where application would not check if a newer version was available.
- - Other minor bug fixes.
+ - Fixed an issue where certain models of gender specific gear would not load
+ - Fixed an issue where texture map would not get selected correctly upon switching items
+ - Fixed an issue where certain faces were not loading
+ - Fixed an issue where application would not open if sqpack directory was chosen
+ - Other minor bug fixes
 
 Know Issues:
  - Not all models are exportable as .dae.
