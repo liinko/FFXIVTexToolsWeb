@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.3.0.0</version>  
+  <version>1.4.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>  
 Application:
- - Reorganized list into more categories
- - Added Options > Save All DDS to menus
- - Added Help > Start Over to menus
- - Added dat file identifier to modlist data
- - Added Backup for 060000 indices
- - Changed location of modlist file
- - Now attempts to locate ffxiv install directory
+ - Added more translations.
+ - Removed ability to turn off modlist.
  
 Textures:
- - Added some UI textures (more coming soon)
- - Added Icon set to texture map list for gear
- - Added support to import/export texture types A8, A1R5G5B5, A4R4G4B4
- - Textures saved as an image no longer have a pre-multiplied alpha
+ - Added Loading Image, Map Symbol, Online Status, and Weather to UI.
 
 3D:
- -  Import now corrects bone name order discrepancies
-     ^  This allows replacing mesh parts from different pieces of gear
- - Import now uses the binormals in the .dae file if they are present 
- - Switched UV coordinates to (0,1) for OBJ files
- 
+ - Models now export at 10x their original size for easier modding.
+ - Changed the datatype of Normals and Texture coordinates from Half Floats to Singles.
+ - Changed up axis to Y_UP.
+ - other smaller tweaks to importing and exporting
+
 Bug Fixes:
- - Fixed an issue where certain models of gender specific gear would not load
- - Fixed an issue where texture map would not get selected correctly upon switching items
- - Fixed an issue where certain faces were not loading
- - Fixed an issue where application would not open if sqpack directory was chosen
+ - Fixed an issue where certain items were using system locale instead of application language.
+ - Fixed an issue where some languages would not function correctly.
+ - Fixed an issue where UI texture would not be imported correctly.
+ - Fixed an issue where certain head models could not be exported.
+ - Fixed an issue where a check for .modlist was being called before it was created
  - Other minor bug fixes
 
 Know Issues:
