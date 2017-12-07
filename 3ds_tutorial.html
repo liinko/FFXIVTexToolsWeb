@@ -1,0 +1,282 @@
+---
+layout: default
+title: 3DS Tutorial
+---
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+            <h1><b>3DS Tutorial</b></h1>
+            In this tutorial I will be combining 2 different models into 1.
+            I will go over:
+            <li>The Tools Needed</li>
+            <li>Exporting 3D models from TexTools</li>
+            <li>Importing 3D models into 3DS Max</li>
+            <li>Combining the 3D models</li>
+            <li>Saving the models in the correct format</li>
+            <li>Importing the models back into TexTools</li>
+            <br/><br/>
+            I will be modifying the Acolyte's Skirt, begginging with the original(Left) and ending with the modified version (Right)<br/>
+            <img src="https://i.imgur.com/ECIWfRI.png" alt="original"/> <img src="https://i.imgur.com/GIv1P8J.png" alt="Modified"/>
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+            <h1><b>Tools Needed</b></h1>
+            <li>3DS Max</li>
+            <li>OpenCollada Plugin</li><br/>
+
+            <b>Autodesk 3DS Max:</b> <a href="https://www.autodesk.com/products/3ds-max/overview" target="_blank">https://www.autodesk.com/products/3ds-max/overview</a><br/>
+            or<br/>
+            <b>[Free]Autodesk 3DS Max Student:</b> <a href="https://www.autodesk.com/education/free-software/3ds-max" target="_blank">https://www.autodesk.com/education/free-software/3ds-max</a><br/><br/>
+
+            <b>OpenCOLLADA Plugin:</b> <a href="https://github.com/KhronosGroup/OpenCOLLADA/releases" target="_blank">https://github.com/KhronosGroup/OpenCOLLADA/releases</a><br/>
+            The instuctions for installing the plugin are within the downloaded zip file. Essentailly you copy the COLLADAMaxNew.dle file in Release_max[Year] into your 3dsMax/plugins folder.
+            <br/><br/>
+        
+            <b>Rigging_CombineSkin MaxScript:</b> <a href="https://github.com/liinko/FFXIVTexToolsWeb/blob/master/Rigging_CombineSkin.zip?raw=true" target="_blank">https://github.com/liinko/FFXIVTexToolsWeb/blob/master/Rigging_CombineSkin.zip?raw=true</a>
+        </p>
+        <div class="alert alert-warning"><b>Note:</b>In this tutorial I will be using 3DS Max 2017, but older/newer versions should work.</div>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+  <div class="showback">
+    <p><h1><b>Exporting Models</b></h1>
+      
+      The first thing we have to do is extract the models we will be working with in 3ds max.
+      <br/><br/>
+      In this case I will extract:
+      <li>Acolyte's Skirt (Hyur Midlander Female)</li>
+      <li>Bridesmaid's Tights (Hyur Midlander Female)</li>
+      <br/>
+      
+      <img src="https://i.imgur.com/TGe0yxz.png" alt="Export"/>
+      </p>
+  </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+  <div class="showback">
+    <p><h1><b>Importing into 3DS Max</b></h1>
+      
+      After we have 3DS MAX set up and the models have been extracted we will be importing them into 3ds max.
+      <br/>
+      <div class="alert alert-warning"><b>Once all meshes are imported, make sure to save often to avoid any lost work.</div>
+      <br/>
+      Go to the 3ds max menu and select import:<br/>
+      <img src="https://i.imgur.com/XXOlehM.gif" alt="import"/><br/>
+            <br/>
+      We next change the "Files of type" to "OpenCollada (*.DAE)<br/>
+      <img src="https://i.imgur.com/XJ1oKg3.gif" alt="openCollada"/><br/>
+      <br/>
+      <br/>
+      We always want to open the piece of equipment that will go back into the game first.
+      <br/>
+      In this case I will open Acolyte's Skirt first, so I navigate to [TexTools Folder]\Saved\Legs\Actolyte's Skirt\3D\
+      <br/>
+      Then select the file c0201e0120_dwn.DAE and open.
+      <br/><br/>
+      The following items should show up in your Scene Explorer<br/>
+      <img src="https://i.imgur.com/N9EcNf0.png" alt="Acolyte3ds"/><br/>
+      <br/><br/>
+      <div class="alert alert-warning">We will not be modifying any bones so they can be collapsed.</div>
+      <br/><br/>
+      We then import the next item using the same proccess, in this case the bridesmaids tights
+      <br/><br/>
+      You will always get a "Import Name Conflict" warning, select Rename all and OK<br/>
+      <img src="https://i.imgur.com/VTQFijf.gif" alt="nameConflict"/>
+      <br/><br/>
+      <div class="alert alert-info">The Name Conflict occurs because both of the models use the same bones.</div>
+      <br/><br/>
+      Now you should see both meshes overlayed ontop of one another in the Viewports. I do the following to the bottom right viewport for better visability.
+      <br/><br/>
+      <img src="https://i.imgur.com/ZV2NRIB.gif" alt="viewport"/>
+      
+      </p>
+  </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Deleting unwanted parts</b></h1>
+        Now that we have both meshes imported its time to delete the parts we do not want, and merge the parts we do.
+        <br/><br/>
+        Selecting a part in the Scene Explorer will highlight the part in the viewports.<br/>
+        <img src="https://i.imgur.com/ok4lvyQ.png" alt="selection"/> <img src="https://i.imgur.com/TtUFFGc.png" alt="Viewport selection"/>
+        <br/><br/>
+        <div class="alert alert-warning"><b>Note:</b> keep in mind which group contains the body mesh and which contains the equipment mesh.</div>
+        <br/><br/>
+        In this case I've selected c0201e0120_dwn_0.1, which is the boot like part of the Acolyte's Skirt, which I do not want in the final product.
+        <br/>
+        So after selecting the part just hit your delete button, and the mesh should be gone from the group and the change reflected in the viewport.<br/>
+        <img src="https://i.imgur.com/XU3sK6B.png" alt="deleted"/> <img src="https://i.imgur.com/83T6N0i.png" alt="Viewport deleted"/>
+        <br/><br/>
+        We do the same to the top equipment and leg portions of the bridesmaids tights, which we do not want.<br/>
+        <img src="https://i.imgur.com/tkdSiUq.png" alt="deleted"/> <img src="https://i.imgur.com/NrXzRuQ.png" alt="Viewport deleted"/>
+        <br/><br/>
+        And finally we do the same to some the leg portion of the Acolytes skirt which is in the same spot as part of the tights.
+        <br/><br/>
+        <img src="https://i.imgur.com/Njz4azn.png" alt="deleted"/> <img src="https://i.imgur.com/98GgZQw.png" alt="Viewport deleted"/>
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Merging and moving meshes</b></h1>
+        Now we need to add the Bridesmaids Tights mesh to the Acolyte Skirt mesh, essentailly replacing the boot like part we deleted earlier.
+        <br/><br/>
+        We have a bit of a problem though, we deleted only 1 mesh part, but the bridesmaids tights are 3 meshes.<br/>
+        <img src="https://i.imgur.com/ok4lvyQ.png" alt="selection"/> <img src="https://i.imgur.com/TtUFFGc.png" alt="Viewport selection"/>
+        <br/>
+        <img src="https://i.imgur.com/hTZTtDq.png" alt="selection"/> <img src="https://i.imgur.com/MfG6hY5.png" alt="Viewport selection"/>
+        <br/><br/>
+        So what we'll have to do is merge the 3 parts of the bridesmaids tights into 1. This is where the script you downloaded comes in.
+        <br/><br/>
+        <b>With the 3 meshes we want to combine selected</b>, go to Scripting > Run Script<br/>
+        <img src="https://i.imgur.com/Bm4FcEw.gif" alt="run script"/>
+        <br/><br/>
+        Then we select Combine Skin<br/>
+        <img src="https://i.imgur.com/SaQUmQM.png" alt="combine skin"/>
+        <br/><br/>
+        When the script finishes we are left with the combined mesh.<br/>
+        <img src="https://i.imgur.com/Crz54jf.png" alt="combine skin"/>
+        <br/><br/>
+        Now we can drag and drop the mesh into the group where the mesh being replaced is.<br/>
+        <img src="https://i.imgur.com/6L8t4tm.gif" alt="combine skin"/>
+        <br/><br/>
+        Then rename it to the name of the mesh it is replacing by either right click > rename, or clicking on the name again once it is selected.<br/>
+        <img src="https://i.imgur.com/Hf4FsuK.gif" alt="combine skin"/>
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Changing texture coordinates.</b></h1>
+        Because we had a mesh from the bridesmaids tights brought into the acolytes skirt mesh, the texture coordinates for the bridesmaids tights are now going to fall in the acolytes skirt texture.
+        <br/><br/>
+        To see this we select all of the meshes we now have for group_0.<br/>
+        <img src="https://i.imgur.com/X0Izx72.png" alt="selection"/> 
+        <br/><br/>
+        We then add <b>Unwrap UVW</b> to the modifier list and select <b>Open UV Editor...</b><br/>
+        <img src="https://i.imgur.com/H14Ux6M.gif" alt="modifier list"/> 
+        <br/><br/>
+        Here we can see where all of the meshes are going to be mapped to on the texture.<br/>
+        To line the texture up correctly to the mesh, select the 4 squares, and then select a texture for the background (I prefer Normal map for a more detailed view).<br/>
+        <img src="https://i.imgur.com/7OSg20S.gif" alt="mapping"/> 
+        <br/><br/>
+        After that is done you can close the UV Editor, select only the mesh we're interested in.<br/>
+        <img src="https://i.imgur.com/n2zOI2V.png" alt="selection"/>
+        <br/><br/>
+        Go back to the modifier list, select <b>Unwrap UVW</b> and <b>Open UV Editor ...</b> again.<br/>
+        <img src="https://i.imgur.com/4udMV6q.png" alt="modifier list"/>
+        <br/><br/>
+        You should now be able to see where the bridesmaids tights mesh we brought over will get its texture from<br/>
+        From here you can select the meshes UVs and move/rotate/scale them and place them wherever you think is best<br/>
+        <img src="https://i.imgur.com/fM7M0IF.gif" alt="moverotatescale"/>
+        <div class="alert alert-warning"><b>Keep in mind that where you place it, you will most likely have to modify the items textures to change/color that specific part of the mesh.</div>
+        <br/>
+        You can go back to having them all selected, and open the UV editor to check whether they are still overlapping, or verify placement.<br/>
+        Here's what mine ended up looking like.<br/>
+        <img src="https://i.imgur.com/HqmFaey.png" alt="mapping"/>
+        <br/><br/>
+        Now because the order in which things appear in the modifier <b>does</b> matter when saving, we need to go to the modifier list of each meshe we selected for Unwrap UV and move it beneath Skin.<br/>
+        <img src="https://i.imgur.com/lt5fbfw.gif" alt="modifier list"/>
+            <div class="alert alert-danger"><b>Do this for each of the meshes that were selected or TexTools will not successfuly import.</div>
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Exporting</b></h1>
+        Now that we have the desired look we need to export the file in collada format.
+        <br/><br/>
+        Go to the menu > Export.<br/>
+        <img src="https://i.imgur.com/OwrahwS.gif" alt="selection"/>
+        <br/><br/>
+        Change the "Save as type:" to OpenCOLLADA (*.DAE).<br/>
+        <img src="https://i.imgur.com/ZhtYxbk.gif" alt="selection"/>
+        <br/><br/>
+        <div class="alert alert-warning">Make sure to save to the same directory, in this case [TexTools Folder]\Saved\Legs\Actolyte's Skirt\3D\</div>
+        <br/><br/>
+        Select the file we are going to replace and select Save.<br/>
+        <img src="https://i.imgur.com/dBlSkM3.png" alt="selection"/>
+        <br/><br/>
+        When asked if you want to replace the existing file, select Yes.
+        <br/><br/>
+        You will then see the export settings, make sure they are as follows<br/>
+        <img src="https://i.imgur.com/t7L8R8P.png" alt="selection"/>
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Correcting the file order</b></h1>
+        Because we moved the mesh from one group to another, the order in which they are written in the .dae file is most likely incorrect.
+        <br/>
+        <div class="alert alert-danger"><b>This only needs to be done if there is more than 1 mesh in the group, and the mesh replaced was the primary mesh "_0", "_1", etc. and not a mesh part "_0.1", "_0.2", etc.</div>
+            
+        <div class="alert alert-warning">In the case of this tutorial we don't have to, but I'm placing this here in case it is needed.</div>
+        <br/>
+        We need to do this because as of now, TexTools does not have a way to handle out of order meshes that begin with a mesh part "_0.1, "_0.2", etc., and I don't know how to correct the order in 3ds max.<br/>
+        <br/>
+        <div class="alert alert-warning">I know this part is a pain, and I'll try and add a fix for it within TexTools for the next release.</div>
+        <br/>
+        To correct this, we have to open the .dae file in a text editor (I use Notepad++) and copy paste the section into the correct place.
+        <br/><br/>
+        Go to the section labled library_geometries<br/>
+        <img src="https://i.imgur.com/RrokebJ.png" alt="selection"/>
+        <br/><br/>
+        Every mesh part has a geometry section, and they should be in ascending order numerically, starting with the mesh without a "." in it in thsi case "geom-c0201e0120_dwn_0" should be the first.
+        <br/>
+        However the first section is _0.1, which happens when you delete a mesh and then replace it with another again later in 3ds.
+        <br/><br/>
+        So what we do is go to where the geometry section _0 is located, and cut(ctrl+x) the entire geometry section from <b>&lt;geometry&gt;</b> to <b>&lt;/geomerty&gt;</b> <br/>
+        <img src="https://i.imgur.com/kwajnlh.png" alt="selection"/>
+        <div class="alert alert-warning"><b>Note:</b>The entire section goes down further than the screenshot.</div>
+        <br/><br/>
+        Then pase it (ctrl+v) at the top of the section right after <b>&lt;library_geometries&gt;</b> and before the first <b>&lt;geometry&gt;</b><br/>
+        <img src="https://i.imgur.com/196VW3G.png" alt="selection"/>
+        <br/><br/>
+        Now we have to do the same thing for the <b>&lt;controller&gt;</b> section of _0 located in the <b>&lt;library_controllers&gt;</b> section<br/>
+        <img src="https://i.imgur.com/O4M4NiN.png" alt="selection"/>
+        <br/><br/>
+        Placing it at the top of the section between the <b>&lt;library_controllers&gt;</b> section and the fisrt <b>&lt;controller&gt;</b><br/>
+        <img src="https://i.imgur.com/OmjVOH3.png" alt="selection"/>
+        <br/><br/>
+        Then Save the file, and we are done.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <p>
+        <h1><b>Importing to TexTools</b></h1>
+        This part is pretty straight forward, just go to the same model in TexTools and click Import<br/>
+        <img src="https://i.imgur.com/n8rZNeC.png" alt="import"/>
+        <br/><br/>
+        After importing and going back to that model you should see the results.<br/>
+        <img src="https://i.imgur.com/6F7KgxJ.png" alt="results"/>
+        <br/><br/>
+        Once again, don't forget to also change your textures accordingly, for example here is the changes I made based on my texture coordinate placement.
+        <br/><br/>
+        Original<br/>
+        <img src="https://i.imgur.com/PD3o5Vs.png" alt="original"/><br/>
+        Modified<br/>
+        <img src="https://i.imgur.com/rtXTDHo.png" alt="new"/>
+        </p>
+    </div>
+</div>
