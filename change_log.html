@@ -14,6 +14,36 @@ title: Change_Log
             <li>You may also wish to copy over your existing Saved folder.</li></div>
         
         <h4><b>Application Changes</b></h4>
+        <li>Changed texture type to reflect selections in photoshop export options.</li>
+        <li>Added Mipmap count to texture display to make it easier to determine whether Generate MIP maps option is necessary.</li>
+        <li>Added additional checks to determine issues on Textools startup.</li>
+
+        <h4><b>3D Changes</b></h4>
+        <li>Added additional safeguards to importing when required data is missing.</li>
+        
+        <h4><b>Bug Fixes</b></h4>
+        <li>Fixed an issue where certain textures were unable to be exported because of "Illegal characters in path".</li>
+        <li>Fixed an issue where models being imported that had index data count > 16,000 were not being split into separate parts causing the game to crash.</li>
+        <li>Fixed an issue where index data and blend indices were not being combined correctly when imported, causing crashes when importing.</li>
+        <li>Fixed an issue where TexTools would not load hand models when being opened from model ID search.</li>
+        <li>Fixed an issue where version check was retrieving the incorrect version number.</li>
+        <li>Fixed an issue where index offsets were not being written correctly to the extra model data.</li>
+        <li>Fixed an issue where the saved directory for UI items was incorrect.</li>
+        <li>Other minor bug fixes</li>
+        
+    </div><!--/showback -->
+</div>
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <h3><i class="fa fa-angle-right"></i> <b>Version 1.6</b></h3><br/>
+        
+        <div class="alert alert-warning"><b>====== Important ======</b><br/>
+            <li>The location of the modlist file, Saved folder, and Index_Backups folder has moved to Documents/TexTools/</li>
+            <li>This will be the default location for all versions going forward, making it easier to update without moving files around, and should help prevent issues.</li>
+            <li>It is recommended to copy your existing TexTools.modlist file, and Index_Backups folder over to the new directory, or Start Over in the previous version before using this newer version.</li>
+            <li>You may also wish to copy over your existing Saved folder.</li></div>
+        
+        <h4><b>Application Changes</b></h4>
         <li>Updated to latest version of Helix Toolkit.</li>
         <li>Added new steam directory name "FINAL FANTASY XIV Online" to common install directories.</li>
         <li>Help > Check For Problems now does a more thorough check.</li>
