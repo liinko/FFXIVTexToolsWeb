@@ -6,7 +6,7 @@
     Application:
       - Added the ability to change directory for Index Backup folder and Modlist file.
       - Added error checking when reading the games items list.
-      - Added missing Egi (Sephirot & Bahamut).
+      - Added missing Egi (Sephirot, Bahamut).
       - Added discord link.
       - Added tutorials link to Help menu.
 
