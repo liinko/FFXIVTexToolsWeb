@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.6.5.0</version>  
+  <version>1.7.0.0</version>  
   <url>http://ffxivtextools.dualwield.net</url>  
   <log>  
     Application:
-     - Changed texture type to reflect selections in photoshop export options.
-     - Added Mipmap count to texture display to make it easier to determine whether Generate MIP maps option is necessary.
-     - Added additional checks to determine issues on Textools startup.
+      - Added the ability to change directory for Index Backup folder and Modlist file.
+      - Added error checking when reading the games items list.
+      - Added missing Egi (Sephirot & Bahamut).
+      - Added discord link.
+      - Added tutorials link to Help menu.
 
     3D:
-     - Added additional safeguards to importing when required data is missing.
+      - Removed warning for having extra texture coordinates as that is now taken care of internally.
 
     Bug Fixes:
-     - Fixed an issue where certain textures were unable to be exported because of "Illegal characters in path".
-     - Fixed an issue where models being imported that had index data count > 16,000 were not being split into separate parts causing the game to crash.
-     - Fixed an issue where index data and blend indices were not being combined correctly when imported, causing crashes when importing.
-     - Fixed an issue where TexTools would not load hand models when being opened from model ID search.
-     - Fixed an issue where version check was retrieving the incorrect version number.
-     - Fixed an issue where index offsets were not being written correctly to the extra model data.
-     - Fixed an issue where the saved directory for UI items was incorrect.
+     - Fixed an issue where models were not able to be imported if there was a gap in part numbers.
+     - Fixed an issue where data was being read incorrectly on importing a model for a second time.
+     - Fixed an issue where DX version setting would not save, and would be DX11 after restarting the application every time.
+     - Fixed an issue where RGBA toggles were not selectable on UI items.
+     - Fixed an issue where texture variations of Pets were not displaying in 3D view.
+     - Other minor bug fixes.
+    
+    Known Issues:
+     - Some or All model imports crash the game when using the DX9 client.
   </log>
 </FFXIVTexTools2>  
