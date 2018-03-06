@@ -2,7 +2,47 @@
 layout: default
 title: Change_Log
 ---
-
+<div class="col-lg-10 main-chart">
+    <div class="showback">
+        <h3><i class="fa fa-angle-right"></i> <b>Version 1.8</b></h3><br/>
+             
+        <h4><b>Application Changes</b></h4>
+        <li>Added Make ModPack and Import ModPack in the Mods menu for batch export/import.</li>
+        <li>Added Default Race under Options menu, this will show the selected races texture in 3D view.</li>
+        <li>Added Mod Repos to the menu.</li>
+        <li>Added the ability to delete mods from Mod List.</li>
+        <li>Added version number to error messages</li>
+        <li>Mod List now supports multi-select (Ctrl + Click) (Shift + Click).</li>
+        <li>Pets now has separate entries for each version</li>
+        <li>Removed DX Version from Menu, clicking on the DX Version in the status bar now changes the DX version.</li>
+        <li>Monsters and DemiHumans now save to their respective folders when saved from Model Search.</li>
+        
+        <h4><b>Textures</b></h4>
+        <li>Added secondary textures for pets</li>
+        <li>Added Field Markers to UI</li>
+        
+        <h4><b>3D</b></h4>
+        <li>Added Advanced Importing for 3D models.</li>
+        <li>An import settings file now exports with 3D models containing extra data.</li>
+        <li>TexTools will now stay on the same race after importing.</li>
+        <li>Added message when model being imported has indices in the extra data that are out of range.</li>
+        <li>Added Update TEX button, this will reload the textures on the model.</li>
+        <li>Changed reflection amount to be within button text.</li>
+        <li>DemiHuman parts now appear in dropdown menu when selected from Model Search.</li>
+        <li>Ctrl+R now resets the camera in 3D view.</li>
+        
+        <h4><b>Bug Fixes</b></h4>
+        <li>Fixed an issue where Mounts did not appear after patch 4.2</li>
+        <li>Fixed an issue where the application would not read .dat files higher than 0 for 0a.</li>
+        <li>Fixed an issue where UI items would not appear unless alpha was checked.</li>
+        <li>Fixed an issue where models in the DemiHuman category would not load when opened from the ModelSearch Window.</li>
+        <li>Fixed an issue where indices were not being read as unsigned, causing certain models to not fully load.</li>
+        <li>Fixed an issue where any model in the monster category would not import correctly.</li>
+        <li>Fixed an issue where models with more than 10 parts would not import correctly.</li>
+        <li>Fixed an issue where bones weights being imported would not equal to 1 in some cases. (Big thanks to Sel.)</li>
+        <li>Fixed an issue where bones with 0 weight would cause issue upon reimporting. (Big thanks to Sel.)</li>
+    </div><!--/showback -->
+</div>
 <div class="col-lg-10 main-chart">
     <div class="showback">
         <h3><i class="fa fa-angle-right"></i> <b>Version 1.7.5</b></h3><br/>
