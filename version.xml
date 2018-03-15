@@ -8,8 +8,8 @@ Application:
  - [ModPack Creator]Added multi select buttons.
  - [ModPack Creator]Added .atex and .avfx details.
  - [ModPack Creator]Added count and size.
- - [ModPack Creator & Importer]Added GB to total size of selected files.
- - [ModPack Creator & Importer]Added sort on header click.
+ - [ModPack Creator and Importer]Added GB to total size of selected files.
+ - [ModPack Creator and Importer]Added sort on header click.
  - [ModPack Importer]Added progress dialog on import.
  - [ModPack Importer]Moved import process to a separate thread.
  - [Directories]Added ability to change ModPack Directory
