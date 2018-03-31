@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.9.0.0</version>  
+  <version>1.9.1.0</version>  
   <url>http://textools.dualwield.net</url>  
   <log>  
-Application:
- - [ModPack]Now does 100 entries at a time.
- - [ModPack]Now supports > 2GB.
- - [ModPack]Progress window for creator.
- - Updated Links
- - Changed new window positions to center
- - Added more checks on startup
- 
-Textures:
- - Added Translucency Toggle for textures
-
 3D:
  - Added more checks for Key already present errors
- - Added attributes to Advanced Importing
 
 Bug Fixes:
- - Fixed an issue where Roegadyn body textures would not appear correctly
- - Fixed access violation causing application crash when viewing certain textures
- - Fixed an issue where the Select Active button in the modpack creator would only select visible entries. 
- - Fixed an issue where items in .dat5 would show inactive incorrectly.
- - Fixed an issue where importing after a .dat5 was created was not working properly.
- - Other minor fixes and improvements.
- 
-Known Issues:
- - Recent hair styles cannot be exported (Needs new skeleton files [Will update soon])
+ - Fixed an issue where Modpack creation was skipping a file (thanks to Kaladin Stormblessed)
+ - Fixed an issue where reading the HUD list could cause a crash.
+    
+For previous changelogs check the Change Log section of the website.
   </log>
 </FFXIVTexTools2>  
