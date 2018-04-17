@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.9.1.0</version>  
+  <version>1.9.6.0</version>  
   <url>http://textools.dualwield.net</url>  
   <log>  
-3D:
- - Added more checks for Key already present errors
+Application:
+ - Added error message when trying to import a modpack while the game is running.n.
+ - Added customize menu to change skin/hair/iris/tail/etc colors.
+ 
+Textures:
+ - Added check for resolutions that are not multiples of 2.
 
 Bug Fixes:
- - Fixed an issue where Modpack creation was skipping a file (thanks to Kaladin Stormblessed)
- - Fixed an issue where reading the HUD list could cause a crash.
+ - Fixed an issue where having the normal map be a different resolution than the other textures would cause the 3D model to not load.
+ - Fixed an issue where hair in modlist would not fully load and cause an error when accessory colorset was present.
+ - Fixed an issue where VFX files would not export.
+ - Fixed an issue where models with variants >100 would not load correctly.
+ - Fixed an issue where offsets could be incorrect when importing and having beyond a .dat4 in certain circumstances.
+ - Fixed an issue where data would be placed in .dat4 even after it hit the 2GB limit.
+ - Other minor fixes and improvements.
     
 For previous changelogs check the Change Log section of the website.
   </log>
