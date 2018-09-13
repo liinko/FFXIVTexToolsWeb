@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.9.6.0</version>  
+  <version>1.9.8.3</version>  
   <url>http://textools.dualwield.net</url>  
   <log>  
 Application:
- - Added error message when trying to import a modpack while the game is running.n.
- - Added customize menu to change skin/hair/iris/tail/etc colors.
- 
-Textures:
- - Added check for resolutions that are not multiples of 2.
+ - Guest update by Sel/Lunaretic [https://github.com/Lunaretic]  & Upierczi/LuckyRed [https://github.com/LuckyRed]
+ - Moved the searchbox to the top, and changed the search image for better usability.
+ - Added an error catch when a directory that no longer exists is accessed.
+ - Added an error catch when a texture is attempted to be imported, but it doesn't exist.
+ - Added import warning when some Mesh Parts contain UV2 Data, but others do not.
 
 Bug Fixes:
- - Fixed an issue where having the normal map be a different resolution than the other textures would cause the 3D model to not load.
- - Fixed an issue where hair in modlist would not fully load and cause an error when accessory colorset was present.
- - Fixed an issue where VFX files would not export.
- - Fixed an issue where models with variants >100 would not load correctly.
- - Fixed an issue where offsets could be incorrect when importing and having beyond a .dat4 in certain circumstances.
- - Fixed an issue where data would be placed in .dat4 even after it hit the 2GB limit.
- - Other minor fixes and improvements.
+ - Fixed an issue where "Save All DDS" would crash when exporting items with icons.
+ - Fixed a bug where "Check For Problems" would crash with LOD enabled.
+ - Fixed crash on closing Modlist with no item open. (Thanks Liinko)
+ - Fixed crash when importing certain Hair Models with more complex LoD1 models than LoD0 models. (Thanks Myopicat)
+ - Fixed dummy mesh parts being added to pad out mesh groups unnecessarily. (Thanks Alexstrasza)
+ - Fixed an error where 'Use Original Bones' would throw unnecessary warnings when used on faces.
     
 For previous changelogs check the Change Log section of the website.
   </log>
