@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.9.8.0</version>  
+  <version>1.9.8.3</version>  
   <url>http://textools.dualwield.net</url>  
   <log>  
 Application:
- - Guest update by Sel/Lunaretic [https://github.com/Lunaretic]  & Upierczi/LuckyRed [https://github.com/LuckyRed]
+ - Guest update by Sel/Lunaretic [https://github.com/Lunaretic] and Upierczi/LuckyRed [https://github.com/LuckyRed]
  - Moved the searchbox to the top, and changed the search image for better usability.
  - Added an error catch when a directory that no longer exists is accessed.
  - Added an error catch when a texture is attempted to be imported, but it doesn't exist.
