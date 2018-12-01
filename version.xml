@@ -2,7 +2,11 @@
 <FFXIVTexTools2>  
   <version>1.9.9.1</version>  
   <url>http://textools.dualwield.net</url>  
-  <log>  
+  <log>      
+HotFix 1.9.9.1
+ - Fixes an bug where some exported meshes had incorrect bone/skin weights.
+ - Fixes a bug which caused the default DAE Exporter to be 'Open Collada' instead of 'OpenCOLLADA'
+    
 Application:
  - Guest update by Sel/Lunaretic [https://github.com/Lunaretic]
  - Skin Specular maps are now editable again for non-Au Ra races, and are viewable again in the ModList view.
@@ -40,10 +44,6 @@ Application:
  
 Known Issues:
  - Skeleton files may need updating for some newer items. (Ex. Some Hairstyles and Bonewicca pieces)
-    
-HotFix 1.9.9.1
- - Fixes an bug where some exported meshes had incorrect bone/skin weights.
- - Fixes a bug which caused the default DAE Exporter to be 'Open Collada' instead of 'OpenCOLLADA'
     
 For previous changelogs check the Change Log section of the website.
   </log>
