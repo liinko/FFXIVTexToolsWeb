@@ -41,6 +41,10 @@ Application:
 Known Issues:
  - Skeleton files may need updating for some newer items. (Ex. Some Hairstyles and Bonewicca pieces)
     
+HotFix 1.9.9.1
+ - Fixes an bug where some exported meshes had incorrect bone/skin weights.
+ - Fixes a bug which caused the default DAE Exporter to be 'Open Collada' instead of 'OpenCOLLADA'
+    
 For previous changelogs check the Change Log section of the website.
   </log>
 </FFXIVTexTools2>  
