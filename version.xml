@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <FFXIVTexTools2>  
-  <version>1.9.8.3</version>  
+  <version>1.9.9.0</version>  
   <url>http://textools.dualwield.net</url>  
   <log>  
 Application:
- - Guest update by Sel/Lunaretic [https://github.com/Lunaretic] and Upierczi/LuckyRed [https://github.com/LuckyRed]
- - Moved the searchbox to the top, and changed the search image for better usability.
- - Added an error catch when a directory that no longer exists is accessed.
- - Added an error catch when a texture is attempted to be imported, but it doesn't exist.
- - Added import warning when some Mesh Parts contain UV2 Data, but others do not.
-
-Bug Fixes:
- - Fixed an issue where "Save All DDS" would crash when exporting items with icons.
- - Fixed a bug where "Check For Problems" would crash with LOD enabled.
- - Fixed crash on closing Modlist with no item open. (Thanks Liinko)
- - Fixed crash when importing certain Hair Models with more complex LoD1 models than LoD0 models. (Thanks Myopicat)
- - Fixed dummy mesh parts being added to pad out mesh groups unnecessarily. (Thanks Alexstrasza)
- - Fixed an error where 'Use Original Bones' would throw unnecessary warnings when used on faces.
+ - Guest update by Sel/Lunaretic [https://github.com/Lunaretic]
+ - Skin Specular maps are now editable again for non-Au Ra races, and are viewable again in the ModList view.
+    - The shared skin_m texture is now always referred to as a 'specular', to match the Au Ra version.
+ - Added Search Bar to Make Modpack Menu
+    - Search supports Wildcards via Asterisk(*), and 'Or' via Pipes(|)
+ - Search for Model menu is now resize-able.
+ - UI now defaults focus to search bars in menus where they are available.
+ - Added Human Readable Error Messages for common start-up errors.
+ - Broken TexTools config files will now be automatically reset.
+ - XIV Mod Archive added to Repos menu.
+ - Added Icon ID Search Menu
+ - Added Export Settings Menu
+ - Version Number updated to 1.9.9.0
+ 
+3D:
+ - Left Rings are now able to be viewed/modified.
+ - Vertex Color is now imported/exported correctly.
+ - Vertex Alpha is now imported/exported correctly.
+    - As a work-around due to inconsistency with DAE parsers/exporters, Vertex Alpha is stored in the X(U) channel of UV3.
+ - UV, Vertex Color, and Vertex Alpha data are now dummied up with default values, in the event that it does not exist in the incoming DAE file.
+ - 3D Meshes now support multiple UV Coordinates and Normals per-Vertex.
+ - For Gear and Character Models, UV1 Data is now automatically moved to the UV[1,-1] quadrant, if it is not already in that quadrant.
+ - BiNormal/Tangent data is no longer required in the DAE file, since TT recalculates them anyways.
+ - Added error message for mesh groups exceeding maximum size.
+ - Added status message display after importing/enabling/disabling a model.
+ 
+ Bug Fixes:
+ - Fixed a bug with Modpack Import that would cause it to break if the uncompressed modpack size was greater than ~4GB.
+ - Fixed a bug with importing that would allow DAT files to exceed the appropriate size.
+ - Fixed a bug with Model Importing that would cause model indices to be thrown off if there was extraneous unused UV/Normal/Vertex Color/etc. data.
+ - Fixed a bug with DAE imports that would cause a crash if the meshes had extra data channels in them (ex. extra UV channels).
+ - Fixed a bug that would cause the 3D Model display to revert back to the default item after using import/enable/disable.
+ - Autodesk Collada exported DAE files can now be imported.
+ 
+Known Issues:
+ - Skeleton files may need updating for some newer items. (Ex. Some Hairstyles and Bonewicca pieces)
     
 For previous changelogs check the Change Log section of the website.
   </log>
