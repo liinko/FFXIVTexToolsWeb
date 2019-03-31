@@ -2,6 +2,6 @@
 <item>
     <version>2.0.1.0</version>
     <url>https://github.com/liinko/FFXIVTexToolsWeb/raw/master/TexTools%20Setup.msi</url>
-    <changelog>https://textools.dualwield.net/change-log/</changelog>
+    <changelog>https://liinko.github.io/changelog.html</changelog>
     <mandatory>false</mandatory>
 </item>
