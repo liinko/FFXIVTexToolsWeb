@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-    <version>2.0.8.0</version>
-    <url>https://github.com/liinko/FFXIV_TexTools_UI/releases/download/v2.0.8/TexTools_Setup.msi</url>
+    <version>2.0.9.0</version>
+    <url>https://github.com/liinko/FFXIV_TexTools_UI/releases/download/v2.0.9/TexTools_Setup.msi</url>
     <changelog>https://liinko.github.io/changelog.html</changelog>
     <mandatory>true</mandatory>
 </item>
